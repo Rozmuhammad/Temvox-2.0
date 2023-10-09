@@ -46,8 +46,8 @@
           <button type="button" class="book-but">
             Book Demo
           </button>
-          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler " onclick="toggleBlock2()" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
@@ -1047,6 +1047,15 @@
           block.classList.add('hidden');
           link.classList.remove('nav-link-but-2');
           link.classList.add('nav-link-but');
+        }
+      }
+
+      function toggleBlock2() {
+        var element = document.getElementsByClassName('navbar-toggler-icon')[0]; // Замените 'yourElementId' на ID вашего блока
+        if (element.style.backgroundImage === 'url("/images/hamburger-menu-1.png")') {
+          element.style.backgroundImage = 'url("/images/hamburger-menu.png")'; // Замените "новое_фото.jpg" и "исходное_фото.jpg" на пути к вашим фотографиям
+        } else {
+          element.style.backgroundImage = 'url("/images/hamburger-menu-1.png")';
         }
       }
     }
