@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Explore TEMVOX, your source for AI-driven audio and phone chat bots. Transform your customer interactions with our innovative solutions.">
+  <meta name="keywords"
+    content="TEMVOX, audio chat bot, phone chat bot, AI chat bot, artificial intelligence, customer interactions">
+  <meta name="author" content="TEMVOX Team">
+  <meta name="robots" content="index, follow">
+  <meta name="og:title" content="TEMVOX - AI-Powered Audio and Phone Chat Bots">
+  <meta name="og:description"
+    content="Explore TEMVOX, your source for AI-driven audio and phone chat bots. Transform your customer interactions with our innovative solutions.">
+  <meta name="og:type" content="website">
+  <meta name="twitter:title" content="TEMVOX - AI-Powered Audio and Phone Chat Bots">
+  <meta name="twitter:description"
+    content="Explore TEMVOX, your source for AI-driven audio and phone chat bots. Transform your customer interactions with our innovative solutions.">
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.7/plyr.css" />
+  <!-- font-Plex Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/segoe-ui-4" rel="stylesheet">
+
+  <link rel="stylesheet" href="style/bootstrap.css">
+  <link rel="stylesheet" href="style/style.css">
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+  <title>Temvox 2.0</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="images/temvox-logo.png" alt="Logo" width="100">
+        </a>
+        <!-- Toggle button for smaller screens -->
+        <div class="main-small-header">
+          <button type="button" class="book-but">
+            Book Demo
+          </button>
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <!-- Navigation items -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto me-4">
+            <li class="nav-item dropdown">
+              <button class="nav-link-but btn text-light solution-hover">
+                Solution
+                <img src="images/down.png" alt="" class="down">
+              </button>
+              <div class="services solution-drop">
+                <div class="row justify-content-center align-items-start">
+                  <div class="main-solution">
+                    <div class="voice-bot-main padding-solution-text">
+                      <a class="main-solution-a" href="#">Voice bot</a>
+                      <img src="images/voice-cricle.png" alt="">
+                    </div>
+                    <div class="chat-bot-main padding-solution-text">
+                      <a class="main-solution-a" href="#">Chat bot</a>
+                      <img src="images/chat-svgrepo.png" alt="">
+                    </div>
+                    <div class="chat-platform-main padding-solution-text">
+                      <a class="main-solution-a" href="#">Chat platform</a>
+                      <img src="images/chat-plus.png" alt="">
+                    </div>
+                    <div class="sending-messages-main padding-solution-text">
+                      <a class="main-solution-a" href="#">Sending Messages</a>
+                      <img src="images/message-send.png" alt="">
+                    </div>
+                    <div class="widget-sait-main padding-solution-text">
+                      <a class="main-solution-a" href="#">Widget for the site</a>
+                      <img src="images/chat-round-unread.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#business">Why Temvox?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="nav-link-but btn text-light industrie-hover">
+                Industries
+                <img src="images/down.png" alt="" class="down">
+              </button>
+              <div class="services industries-drop">
+                <div class="row justify-content-center align-items-start">
+                  <div class="main-industrie">
+                    <div class="telecom-main">
+                      <a class="main-industrie-a padding-industrie-text" href="#">Telecom</a>
+                      <img src="images/mobile-svgrepo.png" alt="">
+                    </div>
+                    <div class="finance-main">
+                      <a class="main-industrie-a padding-industrie-text" href="#">Finance and Insurance</a>
+                      <img src="images/chart-svgrepo.png" alt="">
+                    </div>
+                    <div class="online-retail-main">
+                      <a class="main-industrie-a padding-industrie-text" href="#">Online-Retail</a>
+                      <img src="images/cart-large.png" alt="">
+                    </div>
+                    <div class="transport-main">
+                      <a class="main-industrie-a padding-industrie-text" href="#">Transport and Logistic</a>
+                      <img src="images/delivery-svgrepo-com.png" alt="">
+                    </div>
+                    <div class="real-estate-main">
+                      <a class="main-industrie-a padding-industrie-text" href="#">Real estate</a>
+                      <img src="images/building-svgrepo-com (1).png" alt="">
+                    </div>
+                    <div class="medicine-main">
+                      <a class="main-industrie-a padding-industrie-text" href="#">Medicine</a>
+                      <img src="images/medical-insurance-svgrepo-com.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!-- <a href="https://va.temvox.com/login"><button type="button" class="btn btn-primary">Log in</button></a> -->
+          <div class="main-button">
+            <div class="main-book-but">
+              <button type="button" class="book-but">
+                Book Demo
+              </button>
+            </div>
+            <div class="main-login-but">
+              <button type="button" class="login-but">
+                Log in
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="hero">
+      <!-- <div class="hero my-4"> -->
+      <div class="container">
+        <div class="hero-main">
+          <div class="col-lg-6">
+            <div class="hero-main-info">
+              <h1 class="heading">Customer-Driven Voice Assistants</h1>
+              <p class="pb-4">Ensure a consistent, first-rate brand <br class="add-480px"> experience,<br class="clear-480px"> achieve precise issue
+                resolution, and unlock valuable <br class="clear-480px"> data- <br class="add-480px"> driven business prospects.</p>
+            </div>
+            <div class="buttons my-4 hero-main-but">
+              <button type="button" class="book-but-main">
+                Book a demo
+              </button>
+            </div>
+          </div>
+          <!-- <div class="col-lg-6 video">
+            <iframe src="https://drive.google.com/file/d/1VWGpBsONKszEWFMWxwFcRyNDHCu8xnNH/preview"
+              allow="autoplay"></iframe>
+          </div> -->
+          <div class="main-image">
+            <div class="main-image-in">
+              <img class="image-hero" src="images/OBJECTS.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-image-in-bg">
+        <img class="bg-image-hero" src="images/Vector.png" alt="">
+        <img class="bg-image-hero-2" src="images/Vector (2).png" alt="">
+        <img class="bg-image-hero-3" src="images/Vector (1)3.png" alt="">
+      </div>
+    </div>
+
+    <section id="business" class="business">
+      <div class="container py-5">
+        <div class="main-business-info">
+          <div class="main-business-head">
+            <h3>Our clients think voice AI is a promising investment</h3>
+            <h5>Companies worldwide that use TEMVOX AI contact centre solutions experience demonstrated outcomes</h5>
+          </div>
+          <div class="main-business-precent">
+            <div class="precent-1">
+              <h1>70%</h1>
+              <p>Reduction in call <br> waiting</p>
+            </div>
+            <div class="precent-2">
+              <h1>83%</h1>
+              <p>FCR rate</p>
+            </div>
+            <div class="precent-3">
+              <h1>52%</h1>
+              <p>Increase in NPS score</p>
+            </div>
+            <div class="precent-4">
+              <h1>32%</h1>
+              <p>Increase in customer <br> retention rate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="video" class="video">
+      <div class="container">
+        <div class="main-video">
+          <div class="plyr__video-embed" id="player">
+            <iframe src="https://www.youtube.com/embed/S9bCLPwzSC0?si=v5HyE6HtwVJ84lxj" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="our-voice" class="our-voice text-light">
+      <div class="container">
+        <div class="main-our-voice">
+          <div class="main-our-info">
+            <div class="our-h1">
+              <h1>
+                Our voice assistants are intricately designed <br class="clear-480px"> to optimise your customer support <br class="clear-480px"> operations,
+                saving both
+                time <br class="add-480px"> and resources, <br class="clear-480px"> while delivering an exceptional customer <br class="clear-480px"> journey.
+              </h1>
+            </div>
+            <div class="our-h4">
+              <div class="our-h4-1">
+                <h3>throughout our <br class="add-480px">operations</h3>
+                <p>the TEMVOX voice bot managed more than 500 hours of phone conversations,
+                  equivalent to the workload of 5000 full-time call center agents.</p>
+              </div>
+              <div class="our-h4-2">
+                <h3>within THE TEMVOX MARKETPLACE,</h3>
+                <p>you'll discover a selection of over
+                  200 templates for voice and chat bots. These templates enable you to effortlessly customize your
+                  assistant to suit the unique demands of your business.</p>
+              </div>
+            </div>
+          </div>
+          <div class="main-our-image">
+            <img src="images/Illustration.png" alt="">
+          </div>
+          <div class="main-our-image-small">
+            <img src="images/Illustration (1).png" alt="">
+          </div>
+          <div class="our-h4-small">
+            <div class="our-h4-1">
+              <h3>throughout our <br class="add-480px"> operations</h3>
+              <p>the TEMVOX voice bot managed more than 500 hours of phone conversations,
+                equivalent to the workload of 5000 full-time call center agents.</p>
+            </div>
+            <div class="our-h4-2">
+              <h3>within THE TEMVOX <br class="add-480px"> MARKETPLACE,</h3>
+              <p>you'll discover a selection of over <br class="add-480px">
+                200 templates for voice and chat bots. These templates enable you to effortlessly customize your
+                assistant to suit the unique demands of your business.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="line"></div>
+      <div class="container">
+        <div class="main-special">
+          <div class="main-special-1">
+            <div class="main-special-business">
+              <div class="main-special-business-img">
+                <img src="images/businessman 1.png" alt="">
+              </div>
+              <div class="main-special-business-info">
+                <h1>For small business</h1>
+                <p class="clear">Tailored to small businesses, our no- <br> code AI voice and chat bots are <br>
+                  intentionally
+                  designed with
+                  user- <br> friendliness in mind, making them <br> effortlessly integrated for a quick and <br>
+                  efficient initiation of
+                  automating your <br> customer support operations.</p>
+                <p class="business-p-small">Tailored to small businesses, our no-code AI voice and chat bots are
+                  intentionally designed with user-friendliness in mind, making them effortlessly integrated for a quick
+                  and efficient initiation of automating your customer support operations.</p>
+              </div>
+            </div>
+            <div class="main-special-med">
+              <div class="main-special-med-img">
+                <img src="images/small-shop-alt.png" alt="">
+              </div>
+              <div class="main-special-med-info">
+                <h1>For med-sized</h1>
+                <p class="clear">Customised for medium-sized businesses, our AI voice <br> bot can be readily adapted to
+                  offer
+                  customers a <br>
+                  personalised experience, distinguishing their business <br> from the rest.</p>
+                <p class="med-p-small">Customised for medium-sized businesses, our AI voice bot can be readily adapted
+                  to offer customers a personalised experience, distinguishing their business from the rest.</p>
+              </div>
+            </div>
+          </div>
+          <div class="main-special-2">
+            <div class="main-special-enterprises">
+              <div class="main-special-enterprises-img">
+                <img src="images/office-work-business-workplace-corporate-employee-job.png" alt="">
+              </div>
+              <div class="main-special-enterprises-info">
+                <h1>For enterprises</h1>
+                <p>Customized Solutions for Large Enterprises: Our team specialises <br> in customising solutions to
+                  meet the
+                  specific requirements of <br> high-demanding large businesses.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="audio" class="audio">
+      <div class="container">
+        <div class="main-audio">
+          <div class="main-audio-h1">
+            <h1>This is how voice assistants establish <br class="clear-480px"> communication <br class="add-480px"> during phone interactions:</h1>
+          </div>
+          <div class="main-audio-src">
+            <div class="main-audio-1">
+              <audio controls>
+                <source src="audio/4 audio.mp3" type="audio/mpeg">
+              </audio>
+              <p>Angry customer calls online support</p>
+              <p>Angry customer calls online support</p>
+              <p>Angry customer calls online support</p>
+            </div>
+            <div class="main-audio-2">
+              <audio controls>
+                <source src="audio/4 audio.mp3" type="audio/mpeg">
+              </audio>
+              <p>Angry customer calls online support</p>
+              <p>Angry customer calls online support</p>
+              <p>Angry customer calls online support</p>
+            </div>
+            <div class="main-audio-3">
+              <audio controls>
+                <source src="audio/4 audio.mp3" type="audio/mpeg">
+              </audio>
+              <p>Angry customer calls online support</p>
+              <p>Angry customer calls online support</p>
+              <p>Angry customer calls online support</p>
+            </div>
+            <div class="main-audio-4">
+              <audio controls>
+                <source src="audio/4 audio.mp3" type="audio/mpeg">
+              </audio>
+              <p>Angry customer calls online support</p>
+              <p>Angry customer calls online support</p>
+              <p>Angry customer calls online support</p>
+            </div>
+          </div>
+          <div class="main-audio-question">
+            <div class="main-audio-question-h1">
+              <h1>How could a customer- <br class="add-480px">focused voice <br class="clear-480px"> assistant <br class="add-480px"> benefit your business?</h1>
+            </div>
+            <div class="main-audio-question-but">
+              <button class="main-audio-book-but">Book a demo</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="benefits" class="benefits">
+      <div class="container py-3">
+        <div class="row py-5">
+          <div class="title py-5 benefits-title">
+            <h2>Advantages of call centre <br class="add-480px"> automation using <br class="clear clear-480px"> TEMVOX <br class="add-480px"> conversational AI solutions</h2>
+          </div>
+          <div class="col-lg-6">
+            <div class="accordion" id="accordionLeft">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                    <span class="accordion-text">24/7/365 call service</span>
+                  </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Support queries after business hours are no longer a problem. With TEMVOX-powered virtual
+                    assistants, you can now deliver round-the-clock support - your customers will get their questions
+                    answered and requests completed at any time!
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion" id="accordionLeft">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                    <span class="accordion-text">Personalised assistance</span>
+                  </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Voice bots can resolve up to 70% of your customers’ issues and questions during their first
+                    interaction. They understand caller intent and engage in personalised conversations using real-time
+                    customer information from your CRM system giving immediate and relevant responses.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion" id="accordionLeft">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                    <span class="accordion-text">Increased employee satisfaction</span>
+                  </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    TEMVOX virtual assistants handle routine queries from customers giving live agents the opportunity
+                    to take more calls with complex queries. Employees are no longer at risk of “burnout” doing
+                    time-consuming mundane tasks, and their efficiency is increased.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="accordion" id="accordionLeft">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                    <span class="accordion-text">Multilingual support</span>
+                  </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Provide customers the option to speak with you in the language they are most comfortable with to
+                    express their concerns better. TEMVOX AI supports 20+ languages to help you best serve your
+                    international customers making them feel more valued.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion" id="accordionLeft">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading5">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                    <span class="accordion-text">Omnichannel customer engagement</span>
+                  </button>
+                </h2>
+                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Expand your channels supporting your customers where they prefer. TEMVOX implementation allows for
+                    seamless switching between customer care channels, helping you deliver a consistent and
+                    uninterrupted brand experience.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion" id="accordionLeft">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading6">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                    <span class="accordion-text">Reduced service costs</span>
+                  </button>
+                </h2>
+                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Automation takes some of the manual tasks off your agents, lowering operational costs while
+                    maintaining the same level of service. IVRs are effective at diverting conversations from human
+                    agents which also translates to considerable cost savings in employing and training of additional
+                    human agents.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="advantages" class="advantages">
+      <div class="container">
+        <div class="main-advantages">
+          <div class="main-advantages-in-1">
+            <div class="main-advantages-info-1">
+              <h2 class="main-advantages-info-h2">HEADER HEADER HEADET</h2>
+              <div class="main-advantages-inf-a1">
+                <h2>Craft and personalize your <br>
+                  AI assistant to your preferences,</h2>
+                <p>whether you choose to customise an existing bot from our <br class="clear-480px"> catalogue or create an entirely new
+                  one.</p>
+              </div>
+              <div class="main-advantages-inf-a1">
+                <h2>No Coding Required</h2>
+                <p>Effortlessly configure a scenario bespoke to <br class="clear"> your <br class="add clear-480px"> exact
+                  requirements with the help of our <br class="clear">
+                  skilled
+                  team.
+                </p>
+              </div>
+            </div>
+            <div class="main-advantages-img-1">
+              <img src="images/Image for 1 point.png" alt="">
+            </div>
+          </div>
+          <div class="main-advantages-in-2">
+            <div class="main-advantages-img-2">
+              <img src="images/Image for 2 point.png" alt="">
+            </div>
+            <div class="main-advantages-info-2">
+              <div class="main-advantages-inf-a1">
+                <h2>Incorporate the assistant <br class="add-480px"> into <br class="clear-480px"> a range of services</h2>
+                <p>Once you have configured your assistant, you can effortlessly integrate it with a diverse array of
+                  systems, including IP-PBX, CRM platforms, and messaging apps like Facebook Messenger, WhatsApp, and
+                  WeChat. Furthermore, we provide well-documented APIs for additional integrations, ensuring
+                  uninterrupted connectivity.</p>
+              </div>
+            </div>
+          </div>
+          <div class="main-advantages-in-3">
+            <div class="main-advantages-info-3">
+              <div class="main-advantages-inf-a1">
+                <h2>Our AI assistants enable <br class="add-480px"> consistent <br class="clear-480px"> communication <br class="add-480px"> across multiple channels.</h2>
+                <p>including call support, social networks, instant <br class="clear"> messengers, SMS, <br class="add">
+                  and email. They adhere to
+                  predefined <br class="clear"> scenarios and share client <br class="add"> information, ensuring a <br
+                    class="clear"> unified and informed process.
+                </p>
+              </div>
+            </div>
+            <div class="main-advantages-img-3">
+              <img src="images/Image for 3 point.png" alt="">
+            </div>
+          </div>
+          <div class="main-advantages-in-4">
+            <div class="main-advantages-img-4">
+              <img src="images/Image for 4 point.png" alt="">
+            </div>
+            <div class="main-advantages-info-4">
+              <div class="main-advantages-inf-a1">
+                <h2>Track statics in your <br class="add-480px"> personal account</h2>
+                <p>You can monitor all statistics of your AI assistant within your personal account, including
+                  information regarding your bots, logs and iteration costs, customer database, and comprehensive
+                  analytics on campaign performance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="easy-start" class="easy-start">
+      <div class="container">
+        <div class="main-easy-start">
+          <div class="main-easy-start-left">
+            <div class="main-easy-left-info">
+              <h2>
+                Simplified Initiation <br class="add">
+                <i>=</i> User-Friendly Operation
+              </h2>
+              <p>Begin your AI voice and chat bot <br class="add-480px"> journey effortlessly <br class="add clear-480px">through three <br class="add-480px"> simple steps.</p>
+            </div>
+            <div class="main-easy-left-img">
+              <img src="images/Image Simplified Initiation.png" alt="">
+            </div>
+          </div>
+          <div class="main-easy-start-right">
+            <div class="main-easy-right-img">
+              <img src="images/Instruction Line.png" alt="">
+            </div>
+            <div class="main-easy-right-info">
+              <div class="main-easy-right-info-1">
+                <h3>Answer 10 questions</h3>
+                <p class="but-p">Time: 8 minutes</p>
+                <p>Ten simple questions enable the system to determine <br class="add"> tasks for your assistant.Tariff
+                  Selection</p>
+              </div>
+              <div class="main-easy-right-info-2">
+                <h3>Choose your tariff</h3>
+                <p class="but-p">Time: 30 seconds</p>
+                <p>Pick the most suitable tariff and proceed with <br class="add"> payment as indicated
+                  in the invoice. </p>
+              </div>
+              <div class="main-easy-right-info-3">
+                <h3>Assistant ready in 24 hours</h3>
+                <p class="but-p">Time: 24 hours</p>
+                <p>In a mere 24 hours, our AI technology will create an assistant specifically tailored to your needs.
+                  It will then go through a thorough review by our team of experts to guarantee optimal performance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-easy-faq-small">
+          <img src="images/Instruction Line.png" alt="">
+        </div>
+        <div class="main-easy-faq-img-small">
+          <img src="images/Vector (1)2.png" alt="">
+        </div>
+        <div class="main-easy-faq-img">
+          <img src="images/Vector (1).png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section id="FAQ" class="FAQ py-5">
+      <div class="container">
+        <div class="main-quest">
+          <div class="main-quest-1">
+            <div class="main-quest-info">
+              <h2>What are the most significant <br class="add"> challenges you're <br class="clear"> currently <br
+                  class="add"> encountering in customer <br class="add-480px"> service?</h2>
+              <p>TEMVOX AI supports <br class="add-480px"> businesses as they embark on <br class="add-480px"> their <br class="add clear-480px"> digital transformation <br class="add-480px"> journey.
+                <br class="clear"> Get in touch
+                with <br class="add-480px">
+                us <br class="add clear-480px"> for a conversation on how <br class="add-480px"> we can offer assistance.</p>
+            </div> 
+            <div class="main-quest-button">
+              <button class="main-quest-but">Book a demo</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="faq-accordion">
+            <h1 class="faq-head">FAQs</h1>
+
+            <div class="accordion-btn" onclick="toggleText(event)">
+              <div class="accordion-btn-main">
+                <div class="accordion-btn-text">What is an AI voice and chat assistant?</div>
+                <div class="accordion-img"><img class="arrow" style="text-align: right;" src="images/Drop Down.png"
+                    alt=""></div>
+              </div>
+              <div class="accordion-content">
+                <p>
+                  An AI voice and chat assistant is a computer program powered by artificial intelligence (AI) that can
+                  engage in natural language conversations with users through voice or text-based interfaces.</p>
+              </div>
+            </div>
+
+
+            <div class="accordion-btn" onclick="toggleText(event)">
+              <div class="accordion-btn-main">
+                <div class="accordion-btn-text">How do AI voice and chat assistants work?</div>
+                <div class="accordion-img"><img class="arrow" style="text-align: right;" src="images/Drop Down.png"
+                    alt=""></div>
+              </div>
+              <div class="accordion-content">
+                <p>
+                  These assistants work by utilizing natural language processing (NLP) algorithms to understand user
+                  inputs, process the information, and provide relevant responses or perform tasks based on predefined
+                  instructions.</p>
+              </div>
+            </div>
+
+
+
+            <div class="accordion-btn" onclick="toggleText(event)">
+              <div class="accordion-btn-main">
+                <div class="accordion-btn-text">What are the benefits of using AI voice and chat assistants?</div>
+                <div class="accordion-img"><img class="arrow" style="text-align: right;" src="images/Drop Down.png"
+                    alt=""></div>
+              </div>
+              <div class="accordion-content">
+                <p>
+                  AI voice and chat assistants offer benefits such as improved customer support, automation of routine
+                  tasks, enhanced user engagement, and 24/7 availability for assistance.</p>
+              </div>
+            </div>
+
+
+            <div class="accordion-btn" onclick="toggleText(event)">
+              <div class="accordion-btn-main">
+                <div class="accordion-btn-text">Can I customize the appearance and behavior of my AI assistant?</div>
+                <div class="accordion-img"><img class="arrow" style="text-align: right;" src="images/Drop Down.png"
+                    alt=""></div>
+              </div>
+              <div class="accordion-content">
+                <p>
+                  Yes, you can often customize the appearance, voice, and personality of your AI assistant to align
+                  with your brand and cater to your target audience.</p>
+              </div>
+            </div>
+
+
+            <div class="accordion-btn" onclick="toggleText(event)">
+              <div class="accordion-btn-main">
+                <div class="accordion-btn-text">What industries can benefit from AI voice and chat assistants?</div>
+                <div class="accordion-img"><img class="arrow" style="text-align: right;" src="images/Drop Down.png"
+                    alt=""></div>
+              </div>
+              <div class="accordion-content">
+                <p>
+                  AI assistants have applications in various industries, including e-commerce, healthcare, customer
+                  service, education, and more. They can assist with tasks specific to each industry.</p>
+              </div>
+            </div>
+
+
+
+            <div class="accordion-btn" onclick="toggleText(event)">
+              <div class="accordion-btn-main">
+                <div class="accordion-btn-text">Is it possible to integrate AI assistants with existing software or
+                  systems?</div>
+                <div class="accordion-img"><img class="arrow" style="text-align: right;" src="images/Drop Down.png"
+                    alt=""></div>
+              </div>
+              <div class="accordion-content">
+                <p>
+                  Yes, AI assistants can be integrated with existing software, websites, mobile apps, and even hardware
+                  systems to enhance their functionality.</p>
+              </div>
+            </div>
+
+
+            <div class="accordion-btn" onclick="toggleText(event)">
+              <div class="accordion-btn-main">
+                <div class="accordion-btn-text">How do I ensure the privacy and security of user data with AI
+                  assistants?</div>
+                <div class="accordion-img"><img class="arrow" style="text-align: right;" src="images/Drop Down.png"
+                    alt=""></div>
+              </div>
+              <div class="accordion-content">
+                <p>
+                  Implement strong data encryption and adhere to privacy regulations to protect user data. Ensure that
+                  your AI assistant is designed with security in mind.</p>
+              </div>
+            </div>
+
+
+
+            <div class="accordion-btn" onclick="toggleText(event)">
+              <div class="accordion-btn-main">
+                <div class="accordion-btn-text">Can AI assistants understand multiple languages?</div>
+                <div class="accordion-img"><img class="arrow" style="text-align: right;" src="images/Drop Down.png"
+                    alt=""></div>
+              </div>
+              <div class="accordion-content">
+                <p>
+                  Many AI assistants are capable of multilingual support, allowing them to understand and communicate
+                  in various languages to serve a global audience.</p>
+              </div>
+            </div>
+
+
+
+            <div class="accordion-btn" onclick="toggleText(event)">
+              <div class="accordion-btn-main">
+                <div class="accordion-btn-text">Are AI assistants accessible to people with disabilities?</div>
+                <div class="accordion-img"><img class="arrow" style="text-align: right;" src="images/Drop Down.png"
+                    alt=""></div>
+              </div>
+              <div class="accordion-content">
+                <p>
+                  AI assistant developers often prioritize accessibility features to ensure that people with
+                  disabilities can use them, including screen reader compatibility and voice commands.</p>
+              </div>
+            </div>
+
+
+            <div class="accordion-btn" onclick="toggleText(event)">
+              <div class="accordion-btn-main">
+                <div class="accordion-btn-text">How can I get started with implementing an AI voice or chat assistant
+                  for
+                  my business?</div>
+                <div class="accordion-img"><img class="arrow" style="text-align: right;" src="images/Drop Down.png"
+                    alt=""></div>
+              </div>
+              <div class="accordion-content">
+                <p>
+                  To get started, you can explore AI development platforms, engage with AI solution providers, or
+                  consult with AI development experts to plan and implement a tailored solution for your business needs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contacts">
+      <div class="container">
+        <div class="main-contact-1">
+          <div class="main-contact">
+            <h2>Contacts</h2>
+            <p class="m-c-1">We're excited to hear from <br class="add-480px"> you and answer any questions <br class="add"> you may have <br
+                class="clear"> about our <br class="add-480px">
+              platform
+              and
+              services.</p>
+            <p class="m-c-2">Please feel free to contact us using <br class="add-480px"> the information below:</p>
+            <div class="main-contact-but">
+              <button class="clear add-480px main-contact-book ">Book demo</button>
+              <button class="main-contact-num">+447418358559</button>
+              <button class="clear-480px main-contact-book">Book demo</button>
+              <button class="main-contact-info">info@temvox.com</button>
+            </div>
+            <p class="m-c-3">We look forward to receive your <br class="add-480px"> response and <br class="add clear-480px"> discovering how <br class="add-480px"> our AI voice
+              <br class="clear"> and chat
+              bots
+              can <br class="add-480px">
+              assist <br class="add  clear-480px"> in the growth and <br class="add-480px"> prosperity of your business.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="map" class="map">
+      <div class="main-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3523.9500678545937!2d76.91105493289857!3d43.23533868187866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2skz!4v1696702021235!5m2!1sru!2skz"
+          width="100%" height="90%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <section id="end" class="end">
+      <div class="container">
+        <div class="main-end">
+          <div class="main-end-info">
+            <div class="main-end-1">
+              <div class="main-end-1-a">
+                <img src="images/Link (1).png" alt="">
+              </div>
+              <div class="main-end-1-b">
+                <button type="button" class="end-book">
+                  Book Demo
+                </button>
+                <button type="button" class="end-login">
+                  Log in
+                </button>
+              </div>
+            </div>
+            <div class="main-end-2">
+              <div class="main-end-2-in">
+                <div class="main-end-2-text">Solution</div>
+                <div class="main-end-2-content">
+                  <a class="main-end-2-a" href="#">Voice bot</a>
+                </div>
+                <div class="main-end-2-content">
+                  <a class="main-end-2-a" href="#">Chat bot</a>
+                </div>
+                <div class="main-end-2-content">
+                  <a class="main-end-2-a" href="#">Chat platform</a>
+                </div>
+                <div class="main-end-2-content">
+                  <a class="main-end-2-a" href="#">Sending Messages</a>
+                </div>
+                <div class="main-end-2-content">
+                  <a class="main-end-2-a" href="#">Widget for the site</a>
+                </div>
+              </div>
+              <div class="main-end-3 clear">
+                <div class="main-end-3-text">
+                  <a class="main-end-3-a" href="#">Why Temvox?</a>
+                </div>
+                <div class="main-end-3-text"><a class="main-end-3-a" href="#">Contact us</a></div>
+              </div>
+              <div class="main-end-4">
+                <div class="main-end-4-text">Industries</div>
+                <div class="main-end-4-content">
+                  <a class="main-end-4-a" href="#">Telecom</a>
+                </div>
+                <div class="main-end-4-content">
+                  <a class="main-end-4-a" href="#">Finance and Insurance</a>
+                </div>
+                <div class="main-end-4-content">
+                  <a class="main-end-4-a" href="#">Online-Retail</a>
+                </div>
+                <div class="main-end-4-content">
+                  <a class="main-end-4-a" href="#">Transport and Logistic</a>
+                </div>
+                <div class="main-end-4-content">
+                  <a class="main-end-4-a" href="#">Real estate</a>
+                </div>
+                <div class="main-end-4-content">
+                  <a class="main-end-4-a" href="#">Medicine</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-end-3-text-small">
+          <a class="main-end-3-b" href="#">Why Temvox?</a>
+          <a class="main-end-3-a" href="#">Contact us</a>
+        </div>
+        <div class="main-end-links">
+          <div class="main-end-links-in">
+            <a href="#"><img src="images/linkedin.png.png" alt=""></a>
+            <a href="#"><img src="images/twitter.png" alt=""></a>
+            <a href="#"><img src="images/twitter.png (1).png" alt=""></a>
+          </div>
+          <div class="main-end-temvox">
+            <div class="main-end-temvox-year">
+              <p>© 2023 Temvox</p>
+            </div>
+            <div class="main-end-temvox-privacy">
+              <a class="main-end-tem-a" href="#">Privacy policy</a>
+              <a class="main-end-tem-a" href="#">Cookie Policy</a>
+              <a class="main-end-tem-a" href="#">License agreement</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="contactForm" class="center">
+    <form id="myForm" action="form-handler.php" method="POST">
+      <div class="form-group">
+        <img src="images/logo_temvox 1 (1).png" alt="">
+        <h3>Book Demo</h3>
+        <p>Please fill up the following information to book a demo.</p>
+      </div>
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Your Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <button type="submit" class="btn bg-primary text-light">Book a demo</button>
+    </form>
+  </div>
+  <script src="https://mapgl.2gis.com/api/js/v1"></script>
+  <script>
+    const buttons = document.querySelectorAll('.showForm');
+    const form = document.querySelector('.center');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        form.style.display = 'block';
+      });
+    });
+
+    function toggleText(event) {
+      var arrow = event.currentTarget.querySelector('.arrow');
+      var text = event.currentTarget.querySelector('.accordion-content');
+
+      arrow.style.transform = arrow.style.transform === 'rotate(180deg)' ? 'rotate(0deg)' : 'rotate(180deg)';
+      text.classList.toggle('visible');
+    }
+
+    const map = new mapgl.Map('main.map', {
+      center: [55.31878, 25.23584],
+      zoom: 13,
+      key: 'bfd8bbca-8abf-11ea-b033-5fa57aae2de7',
+      style: 'c080bb6a-8134-4993-93a1-5b4d8c36a59b'
+    });
+    const marker = new mapgl.Marker(map, {
+      coordinates: [55.31878, 25.23584],
+    });
+  </script>
+</body>
+
+</html>
