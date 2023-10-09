@@ -55,11 +55,30 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto me-4">
             <li class="nav-item dropdown">
-              <button class="nav-link-but btn text-light solution-hover">
+              <button onclick="toggleBlock()" class="nav-link-but btn text-light solution-hover" id="nav-link-but">
                 Solution
-                <img src="images/down.png" alt="" class="down">
+                <img src="images/down.png" alt="" class="down clear">
               </button>
-              <div class="services solution-drop">
+              <div class="main-nav-item-solution hidden" id="main-nav-item-solution">
+                <div class="main-nav-solution">
+                  <div class="voice-bot-main padding-solution-text">
+                    <a class="main-solution-a" href="#">Voice bot</a>
+                  </div>
+                  <div class="chat-bot-main padding-solution-text">
+                    <a class="main-solution-a" href="#">Chat bot</a>
+                  </div>
+                  <div class="chat-platform-main padding-solution-text">
+                    <a class="main-solution-a" href="#">Chat platform</a>
+                  </div>
+                  <div class="sending-messages-main padding-solution-text">
+                    <a class="main-solution-a" href="#">Sending Messages</a>
+                  </div>
+                  <div class="widget-sait-main padding-solution-text">
+                    <a class="main-solution-a" href="#">Widget for the site</a>
+                  </div>
+                </div>
+              </div>
+              <div class="services solution-drop ">
                 <div class="row justify-content-center align-items-start">
                   <div class="main-solution">
                     <div class="voice-bot-main padding-solution-text">
@@ -93,35 +112,59 @@
               <a class="nav-link" href="#contact">Contact us</a>
             </li>
             <li class="nav-item dropdown">
-              <button class="nav-link-but btn text-light industrie-hover">
+              <button onclick="toggleBlock1()" class="nav-link-but btn text-light industrie-hover" id="nav-link-but-1">
                 Industries
-                <img src="images/down.png" alt="" class="down">
+                <img src="images/down.png" alt="" class="down clear">
               </button>
+              <div class="main-nav-item-industries hidden" id="main-nav-item-industries">
+                <div class="main-nav-industries">
+                  <div class="main-industries">
+                    <div class="telecom-main">
+                      <a class="main-industries-a padding-industrie-text" href="#">Telecom</a>
+                    </div>
+                    <div class="finance-main">
+                      <a class="main-industries-a padding-industrie-text" href="#">Finance and Insurance</a>
+                    </div>
+                    <div class="online-retail-main">
+                      <a class="main-industries-a padding-industrie-text" href="#">Online-Retail</a>
+                    </div>
+                    <div class="transport-main">
+                      <a class="main-industries-a padding-industrie-text" href="#">Transport and Logistic</a>
+                    </div>
+                    <div class="real-estate-main">
+                      <a class="main-industries-a padding-industrie-text" href="#">Real estate</a>
+                    </div>
+                    <div class="medicine-main">
+                      <a class="main-industries-a padding-industrie-text" href="#">Medicine</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="services industries-drop">
                 <div class="row justify-content-center align-items-start">
-                  <div class="main-industrie">
+                  <div class="main-industries">
                     <div class="telecom-main">
-                      <a class="main-industrie-a padding-industrie-text" href="#">Telecom</a>
+                      <a class="main-industries-a padding-industrie-text" href="#">Telecom</a>
                       <img src="images/mobile-svgrepo.png" alt="">
                     </div>
                     <div class="finance-main">
-                      <a class="main-industrie-a padding-industrie-text" href="#">Finance and Insurance</a>
+                      <a class="main-industries-a padding-industrie-text" href="#">Finance and Insurance</a>
                       <img src="images/chart-svgrepo.png" alt="">
                     </div>
                     <div class="online-retail-main">
-                      <a class="main-industrie-a padding-industrie-text" href="#">Online-Retail</a>
+                      <a class="main-industries-a padding-industrie-text" href="#">Online-Retail</a>
                       <img src="images/cart-large.png" alt="">
                     </div>
                     <div class="transport-main">
-                      <a class="main-industrie-a padding-industrie-text" href="#">Transport and Logistic</a>
+                      <a class="main-industries-a padding-industrie-text" href="#">Transport and Logistic</a>
                       <img src="images/delivery-svgrepo-com.png" alt="">
                     </div>
                     <div class="real-estate-main">
-                      <a class="main-industrie-a padding-industrie-text" href="#">Real estate</a>
+                      <a class="main-industries-a padding-industrie-text" href="#">Real estate</a>
                       <img src="images/building-svgrepo-com (1).png" alt="">
                     </div>
                     <div class="medicine-main">
-                      <a class="main-industrie-a padding-industrie-text" href="#">Medicine</a>
+                      <a class="main-industries-a padding-industrie-text" href="#">Medicine</a>
                       <img src="images/medical-insurance-svgrepo-com.png" alt="">
                     </div>
                   </div>
@@ -130,7 +173,14 @@
             </li>
           </ul>
           <!-- <a href="https://va.temvox.com/login"><button type="button" class="btn btn-primary">Log in</button></a> -->
-          <div class="main-button">
+          <div class="main-nav-links-small">
+            <div class="main-nav-small">
+              <a href="#"><img src="images/linkedin.png.png" alt=""></a>
+              <a href="#"><img src="images/twitter.png" alt=""></a>
+              <a href="#"><img src="images/twitter.png (1).png" alt=""></a>
+            </div>
+          </div>
+          <div class="main-button clear">
             <div class="main-book-but">
               <button type="button" class="book-but">
                 Book Demo
@@ -155,8 +205,10 @@
           <div class="col-lg-6">
             <div class="hero-main-info">
               <h1 class="heading">Customer-Driven Voice Assistants</h1>
-              <p class="pb-4">Ensure a consistent, first-rate brand <br class="add-480px"> experience,<br class="clear-480px"> achieve precise issue
-                resolution, and unlock valuable <br class="clear-480px"> data- <br class="add-480px"> driven business prospects.</p>
+              <p class="pb-4">Ensure a consistent, first-rate brand <br class="add-480px"> experience,<br
+                  class="clear-480px"> achieve precise issue
+                resolution, and unlock valuable <br class="clear-480px"> data- <br class="add-480px"> driven business
+                prospects.</p>
             </div>
             <div class="buttons my-4 hero-main-but">
               <button type="button" class="book-but-main">
@@ -230,9 +282,11 @@
           <div class="main-our-info">
             <div class="our-h1">
               <h1>
-                Our voice assistants are intricately designed <br class="clear-480px"> to optimise your customer support <br class="clear-480px"> operations,
+                Our voice assistants are intricately designed <br class="clear-480px"> to optimise your customer support
+                <br class="clear-480px"> operations,
                 saving both
-                time <br class="add-480px"> and resources, <br class="clear-480px"> while delivering an exceptional customer <br class="clear-480px"> journey.
+                time <br class="add-480px"> and resources, <br class="clear-480px"> while delivering an exceptional
+                customer <br class="clear-480px"> journey.
               </h1>
             </div>
             <div class="our-h4">
@@ -328,7 +382,8 @@
       <div class="container">
         <div class="main-audio">
           <div class="main-audio-h1">
-            <h1>This is how voice assistants establish <br class="clear-480px"> communication <br class="add-480px"> during phone interactions:</h1>
+            <h1>This is how voice assistants establish <br class="clear-480px"> communication <br class="add-480px">
+              during phone interactions:</h1>
           </div>
           <div class="main-audio-src">
             <div class="main-audio-1">
@@ -366,7 +421,8 @@
           </div>
           <div class="main-audio-question">
             <div class="main-audio-question-h1">
-              <h1>How could a customer- <br class="add-480px">focused voice <br class="clear-480px"> assistant <br class="add-480px"> benefit your business?</h1>
+              <h1>How could a customer- <br class="add-480px">focused voice <br class="clear-480px"> assistant <br
+                  class="add-480px"> benefit your business?</h1>
             </div>
             <div class="main-audio-question-but">
               <button class="main-audio-book-but">Book a demo</button>
@@ -381,7 +437,9 @@
       <div class="container py-3">
         <div class="row py-5">
           <div class="title py-5 benefits-title">
-            <h2>Advantages of call centre <br class="add-480px"> automation using <br class="clear clear-480px"> TEMVOX <br class="add-480px"> conversational AI solutions</h2>
+            <h2>Advantages of call centre <br class="add-480px"> automation using <br class="clear clear-480px"> TEMVOX
+              <br class="add-480px"> conversational AI solutions
+            </h2>
           </div>
           <div class="col-lg-6">
             <div class="accordion" id="accordionLeft">
@@ -512,12 +570,14 @@
               <div class="main-advantages-inf-a1">
                 <h2>Craft and personalize your <br>
                   AI assistant to your preferences,</h2>
-                <p>whether you choose to customise an existing bot from our <br class="clear-480px"> catalogue or create an entirely new
+                <p>whether you choose to customise an existing bot from our <br class="clear-480px"> catalogue or create
+                  an entirely new
                   one.</p>
               </div>
               <div class="main-advantages-inf-a1">
                 <h2>No Coding Required</h2>
-                <p>Effortlessly configure a scenario bespoke to <br class="clear"> your <br class="add clear-480px"> exact
+                <p>Effortlessly configure a scenario bespoke to <br class="clear"> your <br class="add clear-480px">
+                  exact
                   requirements with the help of our <br class="clear">
                   skilled
                   team.
@@ -534,7 +594,8 @@
             </div>
             <div class="main-advantages-info-2">
               <div class="main-advantages-inf-a1">
-                <h2>Incorporate the assistant <br class="add-480px"> into <br class="clear-480px"> a range of services</h2>
+                <h2>Incorporate the assistant <br class="add-480px"> into <br class="clear-480px"> a range of services
+                </h2>
                 <p>Once you have configured your assistant, you can effortlessly integrate it with a diverse array of
                   systems, including IP-PBX, CRM platforms, and messaging apps like Facebook Messenger, WhatsApp, and
                   WeChat. Furthermore, we provide well-documented APIs for additional integrations, ensuring
@@ -545,7 +606,9 @@
           <div class="main-advantages-in-3">
             <div class="main-advantages-info-3">
               <div class="main-advantages-inf-a1">
-                <h2>Our AI assistants enable <br class="add-480px"> consistent <br class="clear-480px"> communication <br class="add-480px"> across multiple channels.</h2>
+                <h2>Our AI assistants enable <br class="add-480px"> consistent <br class="clear-480px"> communication
+                  <br class="add-480px"> across multiple channels.
+                </h2>
                 <p>including call support, social networks, instant <br class="clear"> messengers, SMS, <br class="add">
                   and email. They adhere to
                   predefined <br class="clear"> scenarios and share client <br class="add"> information, ensuring a <br
@@ -583,7 +646,8 @@
                 Simplified Initiation <br class="add">
                 <i>=</i> User-Friendly Operation
               </h2>
-              <p>Begin your AI voice and chat bot <br class="add-480px"> journey effortlessly <br class="add clear-480px">through three <br class="add-480px"> simple steps.</p>
+              <p>Begin your AI voice and chat bot <br class="add-480px"> journey effortlessly <br
+                  class="add clear-480px">through three <br class="add-480px"> simple steps.</p>
             </div>
             <div class="main-easy-left-img">
               <img src="images/Image Simplified Initiation.png" alt="">
@@ -634,11 +698,14 @@
             <div class="main-quest-info">
               <h2>What are the most significant <br class="add"> challenges you're <br class="clear"> currently <br
                   class="add"> encountering in customer <br class="add-480px"> service?</h2>
-              <p>TEMVOX AI supports <br class="add-480px"> businesses as they embark on <br class="add-480px"> their <br class="add clear-480px"> digital transformation <br class="add-480px"> journey.
+              <p>TEMVOX AI supports <br class="add-480px"> businesses as they embark on <br class="add-480px"> their <br
+                  class="add clear-480px"> digital transformation <br class="add-480px"> journey.
                 <br class="clear"> Get in touch
                 with <br class="add-480px">
-                us <br class="add clear-480px"> for a conversation on how <br class="add-480px"> we can offer assistance.</p>
-            </div> 
+                us <br class="add clear-480px"> for a conversation on how <br class="add-480px"> we can offer
+                assistance.
+              </p>
+            </div>
             <div class="main-quest-button">
               <button class="main-quest-but">Book a demo</button>
             </div>
@@ -806,8 +873,8 @@
         <div class="main-contact-1">
           <div class="main-contact">
             <h2>Contacts</h2>
-            <p class="m-c-1">We're excited to hear from <br class="add-480px"> you and answer any questions <br class="add"> you may have <br
-                class="clear"> about our <br class="add-480px">
+            <p class="m-c-1">We're excited to hear from <br class="add-480px"> you and answer any questions <br
+                class="add"> you may have <br class="clear"> about our <br class="add-480px">
               platform
               and
               services.</p>
@@ -818,11 +885,13 @@
               <button class="clear-480px main-contact-book">Book demo</button>
               <button class="main-contact-info">info@temvox.com</button>
             </div>
-            <p class="m-c-3">We look forward to receive your <br class="add-480px"> response and <br class="add clear-480px"> discovering how <br class="add-480px"> our AI voice
+            <p class="m-c-3">We look forward to receive your <br class="add-480px"> response and <br
+                class="add clear-480px"> discovering how <br class="add-480px"> our AI voice
               <br class="clear"> and chat
               bots
               can <br class="add-480px">
-              assist <br class="add  clear-480px"> in the growth and <br class="add-480px"> prosperity of your business.</p>
+              assist <br class="add  clear-480px"> in the growth and <br class="add-480px"> prosperity of your business.
+            </p>
           </div>
         </div>
       </div>
@@ -953,6 +1022,34 @@
   </div>
   <script src="https://mapgl.2gis.com/api/js/v1"></script>
   <script>
+    if (window.innerWidth <= 800) {
+      function toggleBlock() {
+        var block = document.getElementById('main-nav-item-solution');
+        var link = document.getElementById('nav-link-but');
+        if (block.classList.contains('hidden')) {
+          block.classList.remove('hidden');
+          link.classList.remove('nav-link-but');
+          link.classList.add('nav-link-but-2');
+        } else {
+          block.classList.add('hidden');
+          link.classList.remove('nav-link-but-2');
+          link.classList.add('nav-link-but');
+        }
+      }
+      function toggleBlock1() {
+        var block = document.getElementById('main-nav-item-industries');
+        var link = document.getElementById('nav-link-but-1');
+        if (block.classList.contains('hidden')) {
+          block.classList.remove('hidden');
+          link.classList.remove('nav-link-but');
+          link.classList.add('nav-link-but-2');
+        } else {
+          block.classList.add('hidden');
+          link.classList.remove('nav-link-but-2');
+          link.classList.add('nav-link-but');
+        }
+      }
+    }
     const buttons = document.querySelectorAll('.showForm');
     const form = document.querySelector('.center');
 
